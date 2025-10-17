@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AC2</string>
+
+    <string name="login_title">Login</string>
+    <string name="email_hint">E-mail</string>
+    <string name="password_hint">Senha (mín. 6)</string>
+    <string name="register_btn">Criar conta</string>
+    <string name="login_btn">Entrar</string>
+    <string name="msg_conta_criada">Conta criada</string>
+    <string name="msg_login_ok">Login OK</string>
+
+    <string name="btn_sair">Sair</string>
+    <string name="crud_title">CRUD de Filme (Firestore)</string>
+    <string name="id_hint">ID do documento (para atualizar/excluir)</string>
+    <string name="title_hint">Título (obrigatório)</string>
+    <string name="director_hint">Diretor</string>
+    <string name="year_hint">Ano (número)</string>
+    <string name="rating_hint">Nota (1 a 5)</string>
+    <string name="cinema_label">Já viu no cinema?</string>
+    <string name="save_btn">Salvar</string>
+    <string name="update_btn">Atualizar</string>
+    <string name="delete_btn">Excluir</string>
+    <string name="list_btn">Listar</string>
+
+    <string name="obrigatorio">Obrigatório</string>
+    <string name="informe_id">Informe o ID</string>
+    <string name="msg_salvo_id">Salvo. ID: %1$s</string>
+    <string name="msg_atualizado">Atualizado</string>
+    <string name="msg_excluido">Excluído</string>
+    <string name="msg_total">Total: %1$d (veja Logcat)</string>
+    <string name="err_generico">Erro: %1$s</string>
+</resources>

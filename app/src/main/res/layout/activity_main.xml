@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:padding="16dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <Button
+            android:text="@string/btn_sair"
+            android:onClick="sair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"/>
+
+        <TextView
+            android:text="@string/crud_title"
+            android:textStyle="bold" android:textSize="18sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/edtId"
+            android:hint="@string/id_hint"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:focusable="false" android:clickable="false" android:longClickable="true"
+            android:layout_marginTop="6dp"/>
+
+        <EditText
+            android:id="@+id/edtTitulo"
+            android:hint="@string/title_hint"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"/>
+
+        <EditText
+            android:id="@+id/edtDiretor"
+            android:hint="@string/director_hint"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"/>
+
+        <EditText
+            android:id="@+id/edtAno"
+            android:hint="@string/year_hint"
+            android:inputType="number"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"/>
+
+        <Spinner
+            android:id="@+id/spGenero"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"/>
+
+        <EditText
+            android:id="@+id/edtNota"
+            android:hint="@string/rating_hint"
+            android:inputType="number"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"/>
+
+        <RatingBar
+            android:id="@+id/rbEstrelas"
+            android:numStars="5" android:stepSize="1"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"/>
+
+        <CheckBox
+            android:id="@+id/cbCinema"
+            android:text="@string/cinema_label"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:text="@string/save_btn"
+                android:onClick="salvarFilme"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <Button
+                android:text="@string/update_btn"
+                android:onClick="atualizarFilme"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:text="@string/delete_btn"
+                android:onClick="excluirFilme"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <Button
+                android:text="@string/list_btn"
+                android:onClick="listarFilmes"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+
+
+        <ListView
+            android:id="@+id/lvFilmes"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="12dp"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp" />
+
+    </LinearLayout>
+</ScrollView>
+
+
